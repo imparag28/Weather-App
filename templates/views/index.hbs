@@ -3,29 +3,45 @@
 <html>
 
 <head>
-    <title>Home</title>
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="icon" href="/img/sun.png">
     <link rel="stylesheet" href="/css/styles.css">
-   
+
 </head>
 
-<body>
-    <div id="ap">
+<body style="background-color: black;">
     {{>header}}
-    <form>
-        <input type="text">
-        <button>search</button>
-    </form>
-    <P id="msg1">
-      
-    </P>
-    <p id="msg2">
-       
-    </p>
-    <img src="" alt="" id="myImg">
-    {{>footer}}
+    <div class="container">
+
+        <div class="jumbotro">
+            <form>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input id="nm" type="text" class="form-control" name="nm" placeholder="Enter Your Location" required>
+                </div><br>
+                <center>
+                 <button class="btn btn-primary" id="btnlog">Search</button></center>
+            </form>
+            <center>
+            <div id="mn"><br>
+                <P id="msg1" class="m-l-5">
+
+                </P><br>
+                <p id="msg2">
+
+                </p><br>
+                <img src="" alt="" id="myImg">
+                <p id="msg3"></p>
+            </div>
+            </center>>
+        </div>
+        </main>
+        {{>footer}}
     </div>
-     <script src="/js/app.js"></script>
+    <script src="/js/app.js"></script>
 </body>
 
 </html>
